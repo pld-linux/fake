@@ -6,7 +6,7 @@ Copyright:	GPL
 Group:		Networking/Utilities
 Source:		ftp://ftp.zipworld.com.au/pub/linux/fake/%{name}-%{version}.tar.gz
 URL:		http://linux.zipworld.com.au/redundant_linux/
-BuildRoot:	/tmp/%{name}-%{version}-root
+BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 Fake is a utility that enables the IP address be taken over by bringing up a
