@@ -16,15 +16,15 @@ gratuitous arp. Designed to switch in backup servers on a LAN.
 
 %prep
 %setup -q
-make patch
+%{__make} patch
 
 %build
-make CC="gcc $RPM_OPT_FLAGS"
+%{__make} CC="gcc $RPM_OPT_FLAGS"
 
 %install
 rm -rf $RPM_BUILD_ROOT
 
-make ROOT_DIR=$RPM_BUILD_ROOT install
+%{__make} ROOT_DIR=$RPM_BUILD_ROOT install
 
 rm -rf $RPM_BUILD_ROOT%{_sysconfdir}/fake/run/CVS
 
