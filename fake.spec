@@ -4,7 +4,7 @@ Summary(pl):	Prze³±czanie redundantnych serwerów poprzez arp spoofing
 Summary(pt_BR):	Software para arp spoofing
 Name:		fake
 Version:	1.1.8
-Release:	1
+Release:	2
 License:	GPL
 Group:		Networking/Utilities
 Source0:	http://www.vergenet.net/linux/fake/download/%{version}/%{name}-%{version}.tar.gz
