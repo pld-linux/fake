@@ -11,7 +11,7 @@ Copyright: GPL
 Group: Networking/Utilities
 Source: ftp://ftp.zipworld.com.au/pub/linux/fake/fake-%{ver}.tar.gz
 Obsoletes: fake
-BuildRoot: /tmp/fake-root
+BuildRoot:	/tmp/%{name}-%{version}-root
 Packager: Horms <horms@zipworld.com.au>
 URL: http://linux.zipworld.com.au/redundant_linux/
 Docdir: %{prefix}/doc
