@@ -54,7 +54,9 @@ permitir o uso de servidores de backup em uma rede local.
 %install
 rm -rf $RPM_BUILD_ROOT
 
-%{__make} ROOT_DIR=$RPM_BUILD_ROOT MAN8_DIR=$RPM_BUILD_ROOT%{_mandir}/man8 install
+%{__make} install \
+	ROOT_DIR=$RPM_BUILD_ROOT \
+	MAN8_DIR=$RPM_BUILD_ROOT%{_mandir}/man8
 
 rm -rf $RPM_BUILD_ROOT%{_sysconfdir}/fake/run/CVS
 
