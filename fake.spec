@@ -3,7 +3,7 @@ Summary(es):	Software para arp spoofing
 Summary(pl):	Prze³±czanie redundantnych serwerów poprzez arp spoofing
 Summary(pt_BR):	Software para arp spoofing
 Name:		fake
-Version:	1.1.7
+Version:	1.1.8
 Release:	1
 License:	GPL
 Group:		Networking/Utilities
@@ -53,7 +53,7 @@ permitir o uso de servidores de backup em uma rede local.
 %install
 rm -rf $RPM_BUILD_ROOT
 
-%{__make} ROOT_DIR=$RPM_BUILD_ROOT install
+%{__make} ROOT_DIR=$RPM_BUILD_ROOT MAN8_DIR=$RPM_BUILD_ROOT%{_mandir}/man8 install
 
 rm -rf $RPM_BUILD_ROOT%{_sysconfdir}/fake/run/CVS
 
@@ -68,5 +68,6 @@ rm -rf $RPM_BUILD_ROOT
 %config(noreplace) %verify(not size mtime md5) %{_sysconfdir}/fake/clear_routers
 %dir %{_sysconfdir}/fake/instance_config
 %config %{_sysconfdir}/fake/instance_config/203.12.97.7.cfg
-%attr(755,root,root) %{_bindir}/send_arp
-%attr(755,root,root) %{_bindir}/fake
+%attr(755,root,root) %{_sbindir}/send_arp
+%attr(755,root,root) %{_sbindir}/fake
+%{_mandir}/man8/*
