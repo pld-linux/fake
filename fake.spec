@@ -1,5 +1,7 @@
 Summary:	Switches in redundant servers using arp spoofing
+Summary(es):	Software para arp spoofing
 Summary(pl):	Prze³±czanie redundantnych serwerów poprzez arp spoofing
+Summary(pt_BR):	Software para arp spoofing
 Name:		fake
 Version:	1.1.6
 Release:	2
@@ -20,6 +22,11 @@ logical interface (an IP alias). Fake is configurable and can be
 automated using systems that monitor the availability of servers (like
 Heartbeat and Heart).
 
+%description -l es
+Fake es un utilitario que permite que otras maquinas en la red puedan
+tomar direcciones IP. Este software fue desarrollado para permitir el
+uso de servidores de copias de seguridad (backup) en una red local.
+
 %description -l pl
 Fake jest prostym narzêdziem pozwalaj±cym na w³±czanie zapasowych
 serwerów w sieci. Na przyk³ad, mo¿e byæ u¿yty do w³±czenia zapasowego
@@ -30,6 +37,11 @@ innej maszyny w sieci lokalnej. Dodatkowy interfejs mo¿e byæ
 interfejsem fizycznym lub logicznym (aliasem IP). Fake jest
 konfigurowalny i mo¿e u¿ywaæ systemów automatycznie monitoruj±cych
 dostêpno¶æ serwerów (np. Heartbeat lub Heart).
+
+%description -l pt_BR
+O Fake é um utilitário que permite que endereços IP possam ser tomados
+por outras máquinas na rede. Este software foi desenvolvido para se
+permitir o uso de servidores de backup em uma rede local.
 
 %prep
 %setup -q
