@@ -3,11 +3,11 @@ Summary(es):	Software para arp spoofing
 Summary(pl):	Prze³±czanie redundantnych serwerów poprzez arp spoofing
 Summary(pt_BR):	Software para arp spoofing
 Name:		fake
-Version:	1.1.6
-Release:	2
+Version:	1.1.7
+Release:	1
 License:	GPL
 Group:		Networking/Utilities
-Source0:	ftp://ftp.vergenet.net/pub/fake/%{version}/%{name}-%{version}.tar.gz
+Source0:	http://www.vergenet.net/linux/fake/download/%{version}/%{name}-%{version}.tar.gz
 URL:		http://www.ca.us.vergenet.net/linux/fake/
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -57,14 +57,12 @@ rm -rf $RPM_BUILD_ROOT
 
 rm -rf $RPM_BUILD_ROOT%{_sysconfdir}/fake/run/CVS
 
-gzip -9nf README AUTHORS ChangeLog docs/{arp_fun,redundant_linux}.txt
-
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc *.gz docs/*.txt.gz
+%doc README AUTHORS ChangeLog docs/{arp_fun,redundant_linux}.txt
 %dir %{_sysconfdir}/fake
 %config(noreplace) %verify(not size mtime md5) %{_sysconfdir}/fake/.fakerc
 %config(noreplace) %verify(not size mtime md5) %{_sysconfdir}/fake/clear_routers
