@@ -4,6 +4,7 @@ Version:	1.1.2
 Release:	2
 License:	GPL
 Group:		Networking/Utilities
+Group(de):	Netzwerkwesen/Werkzeuge
 Group(pl):	Sieciowe/Narzêdzia
 Source0:	ftp://ftp.zipworld.com.au/pub/linux/fake/%{name}-%{version}.tar.gz
 URL:		http://linux.zipworld.com.au/redundant_linux/
@@ -19,7 +20,7 @@ gratuitous arp. Designed to switch in backup servers on a LAN.
 %{__make} patch
 
 %build
-%{__make} CC="gcc $RPM_OPT_FLAGS"
+%{__make} CC="%{__cc} %{rpmcflags}"
 
 %install
 rm -rf $RPM_BUILD_ROOT
