@@ -43,7 +43,6 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc *.gz docs/*.txt.gz
-%{_sysconfdir}/fake/run
 %config %{_sysconfdir}/fake/.fakerc
 %config %{_sysconfdir}/fake/clear_routers
 %config %{_sysconfdir}/fake/instance_config/203.12.97.7.cfg
