@@ -1,6 +1,6 @@
 Summary:	Switches in redundant servers using arp spoofing
 Name:		fake
-Version:	1.1.1
+Version:	1.1.2
 Release:	2
 Copyright:	GPL
 Group:		Networking/Utilities
