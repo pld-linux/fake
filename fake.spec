@@ -2,16 +2,17 @@ Summary:	Switches in redundant servers using arp spoofing
 Name:		fake
 Version:	1.1.2
 Release:	2
-Copyright:	GPL
+License:	GPL
 Group:		Networking/Utilities
-Source:		ftp://ftp.zipworld.com.au/pub/linux/fake/%{name}-%{version}.tar.gz
+Group(pl):	Sieciowe/Narzêdzia
+Source0:	ftp://ftp.zipworld.com.au/pub/linux/fake/%{name}-%{version}.tar.gz
 URL:		http://linux.zipworld.com.au/redundant_linux/
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-Fake is a utility that enables the IP address be taken over by bringing up a
-second interface on the host machine and using gratuitous arp. Designed to
-switch in backup servers on a LAN.
+Fake is a utility that enables the IP address be taken over by
+bringing up a second interface on the host machine and using
+gratuitous arp. Designed to switch in backup servers on a LAN.
 
 %prep
 %setup -q
@@ -25,7 +26,7 @@ rm -rf $RPM_BUILD_ROOT
 
 make ROOT_DIR=$RPM_BUILD_ROOT install
 
-rm -rf $RPM_BUILD_ROOT/etc/fake/run/CVS
+rm -rf $RPM_BUILD_ROOT%{_sysconfdir}/fake/run/CVS
 
 gzip -9nf README AUTHORS ChangeLog docs/{arp_fun,redundant_linux}.txt
 
@@ -37,7 +38,7 @@ rm -rf $RPM_BUILD_ROOT
 %doc *.gz docs/*.txt.gz
 %attr(755,root,root) %{_bindir}/send_arp
 %attr(755,root,root) %{_bindir}/fake
-%config /etc/fake/.fakerc
-%config /etc/fake/clear_routers
-%config /etc/fake/instance_config/203.12.97.7.cfg
-/etc/fake/run
+%config %{_sysconfdir}/fake/.fakerc
+%config %{_sysconfdir}/fake/clear_routers
+%config %{_sysconfdir}/fake/instance_config/203.12.97.7.cfg
+%{_sysconfdir}/fake/run
