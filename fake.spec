@@ -44,7 +44,7 @@ rm -rf $RPM_BUILD_ROOT
 %postun
 
 %files
-%defattr(-, root, root)
+%defattr(-,root,root)
 
 %doc README 
 %doc AUTHORS 
