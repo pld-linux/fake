@@ -67,8 +67,8 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc AUTHORS ChangeLog README docs/{arp_fun,redundant_linux}.txt
 %dir %{_sysconfdir}/fake
-%config(noreplace) %verify(not size mtime md5) %{_sysconfdir}/fake/.fakerc
-%config(noreplace) %verify(not size mtime md5) %{_sysconfdir}/fake/clear_routers
+%config(noreplace) %verify(not md5 mtime size) %{_sysconfdir}/fake/.fakerc
+%config(noreplace) %verify(not md5 mtime size) %{_sysconfdir}/fake/clear_routers
 %dir %{_sysconfdir}/fake/instance_config
 %config %{_sysconfdir}/fake/instance_config/203.12.97.7.cfg
 %attr(755,root,root) %{_sbindir}/send_arp
