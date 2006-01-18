@@ -9,7 +9,7 @@ License:	GPL
 Group:		Networking/Utilities
 Source0:	http://www.vergenet.net/linux/fake/download/%{version}/%{name}-%{version}.tar.gz
 # Source0-md5:	8ad9af87b9fdff4d8b8d1bac7ed8aef9
-URL:		http://www.ca.us.vergenet.net/linux/fake/
+URL:		http://www.vergenet.net/linux/fake/
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
