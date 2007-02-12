@@ -1,7 +1,7 @@
 Summary:	Switches in redundant servers using arp spoofing
-Summary(es.UTF-8):   Software para arp spoofing
-Summary(pl.UTF-8):   Przełączanie redundantnych serwerów poprzez arp spoofing
-Summary(pt_BR.UTF-8):   Software para arp spoofing
+Summary(es.UTF-8):	Software para arp spoofing
+Summary(pl.UTF-8):	Przełączanie redundantnych serwerów poprzez arp spoofing
+Summary(pt_BR.UTF-8):	Software para arp spoofing
 Name:		fake
 Version:	1.1.10
 Release:	1
