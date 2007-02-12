@@ -1,7 +1,7 @@
 Summary:	Switches in redundant servers using arp spoofing
-Summary(es):	Software para arp spoofing
-Summary(pl):	Prze³±czanie redundantnych serwerów poprzez arp spoofing
-Summary(pt_BR):	Software para arp spoofing
+Summary(es.UTF-8):   Software para arp spoofing
+Summary(pl.UTF-8):   PrzeÅ‚Ä…czanie redundantnych serwerÃ³w poprzez arp spoofing
+Summary(pt_BR.UTF-8):   Software para arp spoofing
 Name:		fake
 Version:	1.1.10
 Release:	1
@@ -23,25 +23,25 @@ logical interface (an IP alias). Fake is configurable and can be
 automated using systems that monitor the availability of servers (like
 Heartbeat and Heart).
 
-%description -l es
+%description -l es.UTF-8
 Fake es un utilitario que permite que otras maquinas en la red puedan
 tomar direcciones IP. Este software fue desarrollado para permitir el
 uso de servidores de copias de seguridad (backup) en una red local.
 
-%description -l pl
-Fake jest prostym narzêdziem pozwalaj±cym na w³±czanie zapasowych
-serwerów w sieci. Na przyk³ad, mo¿e byæ u¿yty do w³±czenia zapasowego
+%description -l pl.UTF-8
+Fake jest prostym narzÄ™dziem pozwalajÄ…cym na wÅ‚Ä…czanie zapasowych
+serwerÃ³w w sieci. Na przykÅ‚ad, moÅ¼e byÄ‡ uÅ¼yty do wÅ‚Ä…czenia zapasowego
 serwera poczty, WWW, proxy w czasie zamierzonego lub niezamierzonego
-nie dzia³ania podstawowego serwera. Fake dzia³a poprzez podnoszenie
-dodatkowego interfejsu i spoofowanie adresu ARP aby przej±æ adres IP
-innej maszyny w sieci lokalnej. Dodatkowy interfejs mo¿e byæ
+nie dziaÅ‚ania podstawowego serwera. Fake dziaÅ‚a poprzez podnoszenie
+dodatkowego interfejsu i spoofowanie adresu ARP aby przejÄ…Ä‡ adres IP
+innej maszyny w sieci lokalnej. Dodatkowy interfejs moÅ¼e byÄ‡
 interfejsem fizycznym lub logicznym (aliasem IP). Fake jest
-konfigurowalny i mo¿e u¿ywaæ systemów automatycznie monitoruj±cych
-dostêpno¶æ serwerów (np. Heartbeat lub Heart).
+konfigurowalny i moÅ¼e uÅ¼ywaÄ‡ systemÃ³w automatycznie monitorujÄ…cych
+dostÄ™pnoÅ›Ä‡ serwerÃ³w (np. Heartbeat lub Heart).
 
-%description -l pt_BR
-O Fake é um utilitário que permite que endereços IP possam ser tomados
-por outras máquinas na rede. Este software foi desenvolvido para se
+%description -l pt_BR.UTF-8
+O Fake Ã© um utilitÃ¡rio que permite que endereÃ§os IP possam ser tomados
+por outras mÃ¡quinas na rede. Este software foi desenvolvido para se
 permitir o uso de servidores de backup em uma rede local.
 
 %prep
